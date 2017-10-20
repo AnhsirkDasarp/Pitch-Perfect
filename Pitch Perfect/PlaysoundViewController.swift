@@ -37,6 +37,14 @@ class PlaysoundViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+
+        scaleImage(snailButton);
+        scaleImage(chipmunkButton)
+        scaleImage(rabbitButton)
+        scaleImage(vaderButton)
+        scaleImage(echoButton)
+        scaleImage(reverbButton)
+        scaleImage(stopButton)
         
         setupAudio();
     }
@@ -46,7 +54,9 @@ class PlaysoundViewController: UIViewController {
         configureUI(.notPlaying)
     }
     
-    
+    func scaleImage(_ sender:UIButton)  {
+        sender.imageView?.contentMode = .scaleAspectFit
+    }
     
     // MARK: Actions
     
