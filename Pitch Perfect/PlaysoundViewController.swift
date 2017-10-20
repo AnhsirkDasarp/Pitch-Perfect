@@ -32,12 +32,12 @@ class PlaysoundViewController: UIViewController {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
-
+        
         scaleImage(snailButton);
         scaleImage(chipmunkButton)
         scaleImage(rabbitButton)
@@ -48,7 +48,7 @@ class PlaysoundViewController: UIViewController {
         
         setupAudio();
     }
-
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         configureUI(.notPlaying)
@@ -86,15 +86,5 @@ class PlaysoundViewController: UIViewController {
         print("Stop Audio Button Pressed")
         stopAudio()
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }
